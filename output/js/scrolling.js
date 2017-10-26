@@ -39,7 +39,7 @@ function navVisibility() {
         setTimeout(function () {
             //Refresh offsets, since they could have changed
             if(getCurrentY() > getNavWrapY() + getNavHeight()){
-                getNav().hide();
+                getNav().fadeOut(300);
                 console.log("Timeout hide")
             }else{
                 console.log("Timeout show")
