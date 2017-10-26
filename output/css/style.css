@@ -1,15 +1,17 @@
 html body {
   box-sizing: border-box;
 }
-section#header {
+.fullscreen {
   height: 100vh;
   display: inline-block;
   width: 100%;
+}
+section#section-header {
   background-image: url("../img/header-code.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-section#header > div.header-container {
+section#section-header > div.header-container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -17,9 +19,14 @@ section#header > div.header-container {
   transform: translateY(-50%);
   text-align: center;
 }
-section#header > div.header-container h3 {
+section#section-header > div.header-container h3 {
   line-height: 50px;
   color: #fff;
   letter-spacing: 6px;
   font-size: 50px;
+}
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
 }

@@ -1,10 +1,12 @@
 html body
   box-sizing border-box
 
-section#header
+.fullscreen
   height 100vh
   display: inline-block
   width 100%
+
+section#section-header
   background-image url('../img/header-code.jpg')
   background-repeat:no-repeat;
   background-size cover
@@ -22,3 +24,8 @@ section#header
       color:white
       letter-spacing 6px;
       font-size 50px
+
+.sticky
+  position: fixed !important;
+  top:0;
+  width 100%
