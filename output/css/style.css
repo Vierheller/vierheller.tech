@@ -30,3 +30,10 @@ section#section-header > div.header-container h3 {
   top: 0;
   width: 100%;
 }
+.parallax {
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
