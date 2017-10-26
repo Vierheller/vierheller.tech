@@ -36,21 +36,21 @@ function navVisibility() {
         && !isRunning                                       //Only one timeout triggered, not for each tick
     ){
         isRunning = true;
-        setTimeout(function () {
-            //Refresh offsets, since they could have changed
-            if(getCurrentY() > getNavWrapY() + getNavHeight()){
-                getNav().fadeOut(300);
-                console.log("Timeout hide")
-            }else{
-                console.log("Timeout show")
-                getNav().show();
-            }
-            isRunning = false;
-        }, 1000);
+        if(getCurrentY() > getNavWrapY() + getNavHeight()){
+            getNav().fadeOut(300);
+            console.log("Timeout hide")
+        }else{
+            console.log("Timeout show")
+            getNav().show();
+        }
+        isRunning = false;
+    }
+
+    if(getCurrentY() < lastScroll) {
+        getNav().show();
     }
 
     lastScroll = getCurrentY();
-    getNav().show();
 }
 
 function getCurrentY() {
