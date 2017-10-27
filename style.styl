@@ -61,3 +61,51 @@ section#section-header
     list-style-type none
     line-height 50px
 
+.timeline
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+.timeline::after
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: grey;
+  top: 0;
+  bottom: 0;
+  left: 30px
+  margin-left: -3px;
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 0 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+
+.timeline-container::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left 0px
+  background-color: white;
+  border: 4px solid lightgray;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
