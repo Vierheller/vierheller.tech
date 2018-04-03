@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/lib/normalize/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/lib/bootstrap4/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/lib/bootstrap4/bootstrap.min.css">
         <link rel="stylesheet" href="css/lib/font-awesome/css/font-awesome.min.css">
     </head>
     <body>
@@ -46,7 +46,7 @@
             </nav>
         </section>
 
-        <section id="section-about" class="content fullscreen-min">
+        <section id="section-about" class="content">
             <div class="container">
                 <div class="title">
                     <h2>About me</h2>
@@ -55,7 +55,7 @@
 
                 <div class="row information">
                     <div class="col-sm-12 col-md-4">
-                        <img class="img" src="img/portrait.jpeg">
+                        <img class="img" src="img/portrait.png">
                     </div>
                     <div class="col-sm-12 col-md-8">
                         <p>
@@ -69,11 +69,13 @@
                         </p>
                     </div>
                 </div>
+
+
             </div>
         </section>
 
 
-        <section id="section-cv" class="content fullscreen-min">
+        <section id="section-cv" class="content">
             <div class="container">
                 <div class="title">
                     <h2>Education and Knowledge</h2>
@@ -165,25 +167,96 @@
             </div>
         </section>
 
-        <section id="section-projects" class="content fullscreen-min">
+        <section id="section-projects" class="content">
             <div class="container">
                 <div class="title">
-                    <h2>About me</h2>
+                    <h2>Projects</h2>
                     <hr>
                 </div>
 
-                Projects
+
             </div>
         </section>
 
-        <section id="section-contact" class="content fullscreen-min">
+        <section id="section-contact" class="content">
             <div class="container">
                 <div class="title">
-                    <h2>About me</h2>
+                    <h2>Contact</h2>
                     <hr>
                 </div>
 
-                Contact
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-box address">
+                        <h3><i class="fa fa-map-marker"></i> Address:</h3>
+                        <span>
+                            Ahrweg 7
+                            <br>
+                            63456 Hanau
+                            <br>
+                            Germany
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="contact-box phone">
+                        <h3><i class="fa fa-phone"></i> Phone:</h3>
+                        <span>
+                            +49 176 4773 6901
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="contact-box mail">
+                        <h3><i class="fa fa-envelope"></i> E-Mail:</h3>
+                        <span>
+                            jan-niklas@vierheller.io
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+
+                    <ul class="social-media-buttons">
+                        <li>
+                            <a href="#" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-github"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6 wow fadeInUp delay-05s">
+                    <div class="form">
+                        <div id="error-message"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            <div id="message-send" style="display: none">Thank you! The message has been sent.</div>
+                            <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
             </div>
         </section>
 
@@ -195,7 +268,7 @@
 
         <script src="js/lib/jquery/jquery-3.2.1.min.js" ></script>
         <script src="js/navbarBehaviour.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="js/lib/bootstrap4/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="js/lib/bootstrap4/bootstrap.min.js"></script>
     </body>
 </html>

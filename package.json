@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "styl-w": "stylus -w -o ./output/css"
+    "styl-w": "stylus -w ./stylus -o ./output/css"
   },
   "repository": {
     "type": "git",

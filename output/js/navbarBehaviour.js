@@ -121,8 +121,7 @@ function getNav() {
 }
 
 function getNavHeight() {
-    var height = $('#nav').outerHeight();
-    console.log(height)
+    const height = $('#nav').outerHeight();
     return height
 }
 

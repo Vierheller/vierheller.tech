@@ -1,5 +1,11 @@
+/*
+-----------------------------------------------------
+  General Layout
+-----------------------------------------------------
+*/
 html body {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 #btn-landing {
   margin-top: 30px;
@@ -38,6 +44,11 @@ section#section-header > div.header-container h3 {
   top: 0;
   width: 100%;
 }
+/*
+-----------------------------------------------------
+  Fine tuning
+-----------------------------------------------------
+*/
 #navWrap {
   height: 56px;
 }
@@ -62,6 +73,9 @@ section#section-header > div.header-container h3 {
   list-style-type: none;
   line-height: 50px;
 }
+/*
+  Timeline for CV
+ */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -108,9 +122,82 @@ section#section-header > div.header-container h3 {
   border-radius: 50%;
   z-index: 1;
 }
+.contact-box {
+  margin-bottom: 16px;
+  line-height: 18px;
+}
+.contact-box h3 {
+  font-size: 16px;
+  margin: 0;
+  float: left;
+  width: 100px;
+}
+.contact-box span {
+  display: inline-block;
+}
+.contact-box:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+/*
+  Social Media Buttons
+*/
+.social-media-buttons {
+  padding-left: 0;
+  margin-top: 16px;
+  text-align: center;
+/* Style all font awesome icons */
+/* Add a hover effect if you want */
+/* Set a specific color for each brand */
+/* Facebook */
+/* Twitter */
+}
+.social-media-buttons > li {
+  display: inline;
+  width: 30px;
+  margin: 0 8px 0 8px;
+}
+.social-media-buttons .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.social-media-buttons .fa:hover {
+  opacity: 0.7;
+}
+.social-media-buttons .fa-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+.social-media-buttons .fa-twitter {
+  background: #55acee;
+  color: #fff;
+}
+.social-media-buttons .fa-linkedin {
+  background: #007bb5;
+  color: #fff;
+}
+.social-media-buttons .fa-github {
+  background: #24292e;
+  color: #fff;
+}
 footer .container {
   border-top: 1px solid #000;
   line-height: 50px;
   height: 50px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .social-media-buttons {
+    text-align: left;
+  }
+  .social-media-buttons li {
+    margin: 0;
+  }
 }
