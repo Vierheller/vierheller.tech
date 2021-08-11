@@ -1,11 +1,14 @@
 {
   "name": "professional-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "My personal website",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "styl-w": "stylus -w ./stylus -o ./output/css"
+    "css:scss": "sass scss/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,9 @@
   },
   "homepage": "https://github.com/Vierheller/Professional-Website#readme",
   "dependencies": {
-    "stylus": "^0.54.5"
+    "bootstrap": "^5.1.0",
+    "dart-sass": "^1.25.0",
+    "node-livereload": "^0.6.0",
+    "sass": "^1.37.5"
   }
 }
