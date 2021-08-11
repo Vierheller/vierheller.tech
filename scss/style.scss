@@ -6,6 +6,8 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts" !default
 @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
+@import "intro.scss";
+
 html body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -53,9 +55,8 @@ section#section-header > div.header-container h3 {
 -----------------------------------------------------
 */
 #navWrap {
-  height: 56px;
+  height:80px;
 }
-
 .parallax {
 /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -69,6 +70,7 @@ section#section-header > div.header-container h3 {
 }
 .navbar {
   z-index: 1000;
+  min-height: 80px;
 }
 .img {
   width: 100%;
