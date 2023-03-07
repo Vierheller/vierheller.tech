@@ -1,0 +1,95 @@
+#section-cv {
+
+    /*
+    Timeline for CV
+    */
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #808080;
+        top: 0;
+        bottom: 0;
+        left: 15px;
+        margin-left: -3px;
+    }
+
+    /* Container around content */
+    .timeline-container {
+        padding: 10px 0 10px 40px;
+        position: relative;
+        background-color: inherit;
+    }
+
+    .timeline-container::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+
+    /* The circles on the timeline */
+    .timeline-container::after {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        left: 0px;
+        background-color: #fff;
+        border: 4px solid #d3d3d3;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .contact-box {
+        margin-bottom: 16px;
+        line-height: 18px;
+    }
+
+    .contact-box h3 {
+        font-size: 16px;
+        margin: 0;
+        float: left;
+        width: 100px;
+    }
+
+    .contact-box span {
+        display: inline-block;
+    }
+
+    .contact-box:after {
+        clear: both;
+    }
+
+    .card-text {
+        max-height: 10em;
+        overflow-y: scroll;
+        padding-right: 10px;
+    }
+
+    /* Set the width and color of the scrollbar */
+    ::-webkit-scrollbar {
+        width: 5px;
+        background-color: #F5F5F5;
+    }
+
+    /* Add a shadow to the scrollbar */
+    ::-webkit-scrollbar-thumb {
+        background-color: #808080;
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(44, 44, 44, 0.123);
+    }
+}
