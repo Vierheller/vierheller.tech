@@ -7,7 +7,6 @@ $fa-font-path: "../webfonts";
 
 @import "intro.scss";
 @import "education.scss";
-@import "contact.scss";
 
 
 html body {
@@ -91,6 +90,7 @@ section#section-header > div.header-container h3 {
 .social-media-buttons {
   padding-left: 0;
   margin-top: 16px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -135,9 +135,24 @@ section#section-header > div.header-container h3 {
   color: #fff;
 }
 footer {
+  padding-bottom: 8px;
   .container {
-    border-top: 1px solid #000;
+    margin-top: 8px;
+    padding-top: 8px;
     line-height: 50px;
     text-align: center;
+  }
+  .published {
+    font-size: 0.7em;
+  }
+  .imprint {
+    color: grey;
+    display: block;
+    line-height: normal;
+  }
+  p {
+    line-height: normal;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
 }
