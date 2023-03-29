@@ -13,9 +13,9 @@ jobs:
       - name: Install and Build 🔧 
         run: |
           npm ci
-          npm run build
+          npm run build -- --pathprefix ${{ github.event.repository.name }}
 
-      - name: Upload artifact
+      - name: Upload artifact ⬆
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'dist'
