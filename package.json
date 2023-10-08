@@ -8,10 +8,7 @@
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "dev:reload": "reload -b",
-    "dev:sass": "sass --watch scss/style.scss css/style.css",
-    "dev": "run-p dev:*",
-    "css:scss": "sass scss/style.scss css/style.css",
+    "dev": "npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
