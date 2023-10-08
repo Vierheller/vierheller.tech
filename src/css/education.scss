@@ -1,3 +1,5 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 #section-cv {
 
     /*
@@ -7,6 +9,7 @@
         position: relative;
         max-width: 1200px;
         margin: 0 auto;
+        margin-bottom: 16px;
     }
 
     .timeline::after {
@@ -75,9 +78,14 @@
     }
 
     .card-text {
-        max-height: 10em;
-        overflow-y: scroll;
         padding-right: 10px;
+    }
+
+    @include media-breakpoint-up(lg) { 
+        .card-text {
+            max-height: 10em;
+            overflow-y: scroll;
+        }
     }
 
     /* Set the width and color of the scrollbar */

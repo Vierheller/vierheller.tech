@@ -13,20 +13,6 @@ $fa-font-path: "../webfonts";
 html body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-
-  ::-webkit-scrollbar {
-    width: 8px;  // Width of vertical scroll bar
-    height: 8px;  // Height of horizontal scroll bar
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #888;  // Color of the draggable scrolling handle
-    border-radius: 4px;  // Rounded corners of the scrolling handle
-    
-    &:hover {
-        background: #555;  // Color of the handle on hover
-    }
-  }
 }
 #btn-landing {
   margin-top: 30px;
@@ -65,6 +51,8 @@ section#section-header > div.header-container h3 {
   top: 0;
   width: 100%;
 }
+
+
 /*
 -----------------------------------------------------
   Fine tuning
