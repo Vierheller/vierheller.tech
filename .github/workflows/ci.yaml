@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: [push]
+on: push
 permissions:
   contents: write
 jobs:
@@ -24,6 +24,9 @@ jobs:
   deploy:
     # Add a dependency to the build job
     needs: build
+
+    # Only deploy on master
+    if: ${{ github.ref_name == 'master' }}
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
